@@ -13,10 +13,8 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
-.. math::
-   :label: pfx
-
-   \int_{p}^{q} p dp = f(x)
+.. math:: e^{i\pi} + 1 = 0
+   :label: euler
 
 Contents
 --------
