@@ -16,7 +16,7 @@ how to :ref:`installation` the project.
 .. math::
    :label: pfx
 
-   int_{p}^{q} p dp = f(x)
+   \int_{p}^{q} p dp = f(x)
 
 Contents
 --------
