@@ -21,31 +21,23 @@ There variables can be broken up into a 3 categories: the first is field variabl
 
 **Field Variables**:
 
-.. math:: \vec{u} = 
-the vector velocity field
+$\vec{u}$ = the vector velocity field
 
-.. math:: p = 
-The scalar pressure field
+$p$ = The scalar pressure field
 
-.. math:: \phi = 
-The scalar electric potential field
-
+$\phi$ = The scalar electric potential field
 
 **Field varying constants**:
 
-.. math:: \rho =
-fluid density
+$\rho$ = fluid density
 
-.. math:: \nu = 
-inematic viscosity
+$\nu$ = Kinematic viscosity
 
-.. math:: \sigma = 
-conductivity
+$\sigma$ = conductivity
 
 **Applied source field variable**:
 
-.. math:: \vec{B_{0}} = 
-Applied vector B-field
+$\vec{B_{0}}$ = Applied vector B-field
 
 Discretisation of variables
 ---------------------------
