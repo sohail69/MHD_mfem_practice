@@ -41,7 +41,9 @@ There variables can be broken up into a 3 categories: the first is field variabl
 
 Discretisation of variables
 ---------------------------
-
+The field variables can be discretised in terms of an interpolation function weights
+(shape-function) and discrete a set of discrete field variables. Each field variable is
+assumed to have a unique interpolation function/field.
 
 .. autosummary::
    :toctree: generated
