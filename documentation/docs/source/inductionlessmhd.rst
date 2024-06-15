@@ -93,6 +93,28 @@ equations needed to solve the discrete field equations.
 .. math:: (M_{11})_{mn} = \int_{\Omega} \rho N_{im} N_{in} d\Omega
    :label: massmatrix
 
+
+.. math:: (K^{C}_{11})_{mn} = \int_{\Omega} \rho \nu \nabla N_{im} \nabla N_{in} d\Omega \int_{\partial \Omega} \rho \nu \nabla N_{im} N_{in} \cdot \vec{n} dS
+   :label: conststiffness11
+
+
+.. math:: (K^{C}_{13})_{mn} = \int_{\Omega}  \nabla L_{n} N_{im} d\Omega
+   :label: conststiffness13
+
+
+.. math:: (K^{C}_{21})_{mn} = \int_{\Omega} \nabla \cdot N_{in} L_{m} d\Omega
+   :label: conststiffness21
+
+
+.. math:: (K^{C}_{32})_{mn} = \int_{\Omega} \nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+   :label: conststiffness32
+
+
+.. math:: (K^{C}_{11})_{mn} = \int_{\Omega} \rho N_{im} N_{in} d\Omega
+   :label: conststiffness11
+
+
+
 .. autosummary::
    :toctree: generated
 
