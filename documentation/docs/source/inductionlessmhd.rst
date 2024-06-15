@@ -55,7 +55,7 @@ The discrete variables are denoted with a tilde over them, the equations can be 
 follows:
 
 .. math:: M_{ij} \dot{Y}_{j} + \left( K^{C}_{ij} K^{V}_{ij} \right) Y_{j} = F_{i}
-   :label: blockMatrix
+   :label: blockmatrixstructure
 
 
 Weak forms of the equation
