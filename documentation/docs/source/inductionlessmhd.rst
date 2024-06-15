@@ -67,7 +67,7 @@ and, :math:`F_{i}` are the discrete field forcing terms.
 
 * :math:`\dot{\tilde{Y}} = \left(\dot{\tilde{\vec{u}}} , \dot{\tilde{p}}, \dot{\tilde{\phi}}  \right)`
 
-* :math:`\tilde{Y} = \left(\tilde{\vec{u}} , \tilde{p}}, \tilde{\phi}  \right)``
+* :math:`\tilde{Y} = \left(\tilde{\vec{u}} , \tilde{p}, \tilde{\phi}  \right)``
 
 Weak forms of the equation
 ---------------------------
