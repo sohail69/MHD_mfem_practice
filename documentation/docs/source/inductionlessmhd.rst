@@ -54,6 +54,7 @@ assumed to have a unique interpolation weight function.
 The discrete variables are denoted with a tilde over them, the equations can be put into a block matrix structure as
 follows:
 
+
 .. math:: M_{ij} \dot{Y}_{j} + \left( K^{C}_{ij} K^{V}_{ij} \right) Y_{j} = F_{i}
    :label: blockmatrixstructure
 
