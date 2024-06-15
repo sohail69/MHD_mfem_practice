@@ -51,13 +51,23 @@ assumed to have a unique interpolation weight function.
 
 :math:`\phi = H_{q} \tilde{\phi}_{q}` (continuous approximation to discretised potential field)
 
-The discrete variables are denoted with a tilde over them, the equations can be put into a block matrix structure as
+The discrete variables are denoted with a tilde over them, from inspection of the govering equations
+it can be seen that the  discretized equations have a block matrix structure as
 follows:
 
 
-.. math:: M_{ij} \dot{Y}_{j} + \left( K^{C}_{ij} K^{V}_{ij} \right) Y_{j} = F_{i}
+.. math:: M_{ij} \dot{\tilde{Y}}_{j} + \left( K^{C}_{ij} + K^{V}_{ij} \right) \tilde{Y}_{j} = F_{i}
    :label: blockmatrixstructure
 
+
+In the matrix vector equation above :math:`M_{ij}` is the mass matrix, :math:`K^{C}_{ij}` is the constant/linear 
+component of the stiffness matrix, :math:`K^{V}_{ij}` is the variable/non-linear component of the stiffness matrix.
+:math:`\dot{\tilde{Y}}_{j}` are the discrete field rates, :math:`\tilde{Y}_{j}` are the discrete field variables 
+and, :math:`F_{i}` are the discrete field forcing terms.
+
+* :math:`\dot{\tilde{Y}} = \left(\dot{\tilde{\vec{u}}} , \dot{\tilde{p}}, \dot{\tilde{\phi}}  \right)`
+
+* :math:`\tilde{Y} = \left(\tilde{\vec{u}} , \tilde{p}}, \tilde{\phi}  \right)``
 
 Weak forms of the equation
 ---------------------------
