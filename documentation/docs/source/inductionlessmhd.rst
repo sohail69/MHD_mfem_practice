@@ -39,18 +39,25 @@ There variables can be broken up into a 3 categories: the first is field variabl
 
 * :math:`\vec{B_{0}}` = Applied vector B-field
 
-Discretisation of variables
----------------------------
+Discretisation of variables and block Matrix-structure
+------------------------------------------------------
 The field variables can be discretised in terms of an interpolation function weights
 (shape-function) and discrete a set of discrete field variables. Each field variable is
 assumed to have a unique interpolation weight function.
 
-:math:`u_{i} = N_{im} \tilde{u}_{m}`
+:math:`u_{i} = N_{im} \tilde{u}_{m}` (continuous approximation to discretised velocity field)
 
-:math:`p = L_{r} \tilde{p}_{r}`
+:math:`p = L_{r} \tilde{p}_{r}` (continuous approximation to discretised pressure field)
 
-:math:`\phi = H_{q} \tilde{\phi}_{q}`
+:math:`\phi = H_{q} \tilde{\phi}_{q}` (continuous approximation to discretised potential field)
 
+The discretised variables
+
+Weak forms of the equation
+---------------------------
+The weak forms of the equation can be arrived at by multiplying the strong forms of the equations
+by test functions an integrating, often the test functions can be the interpolation functions. The 3-strong form
+equations have 3-corresponding weak form eqautions
 
 .. autosummary::
    :toctree: generated
