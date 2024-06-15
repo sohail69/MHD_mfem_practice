@@ -18,7 +18,7 @@ The equations in the strong form can be given as a set of 3-differential equatio
 
 There variables can be broken up into a 3 categories: the first is field variables (to be solved for)
 , the second are field varying constants (material properties etc..) and the third categories are field/ time
-dependant source field variables,
+dependant source field variables.
 
 
 
