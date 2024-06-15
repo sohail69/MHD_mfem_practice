@@ -43,7 +43,14 @@ Discretisation of variables
 ---------------------------
 The field variables can be discretised in terms of an interpolation function weights
 (shape-function) and discrete a set of discrete field variables. Each field variable is
-assumed to have a unique interpolation function/field.
+assumed to have a unique interpolation weight function.
+
+:math:`u_{i} = N_{im} \tilde{u}_{m}`
+
+:math:`p = L_{r} \tilde{p}_{r}`
+
+:math:`\phi = H_{q} \tilde{\phi}_{q}`
+
 
 .. autosummary::
    :toctree: generated
