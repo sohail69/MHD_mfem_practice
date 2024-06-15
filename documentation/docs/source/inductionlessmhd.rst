@@ -7,8 +7,8 @@ Strong form of the equations
 ----------------------------
 The equations in the strong form can be given as a set of 3-differential equations:
 
-.. math:: \rho \frac{\partial \vec{u}}{\partial t} + \rho \left( \vec{u} \cdot \nabla \right) \vec{u} -\rho \nu \nabla^{2} \vec{u} + \nabla p - \sigma \left(\vec{u} \times \vec{B_{0}} - \nabla \phi \right) \times \vec{B_{0}} = 0
-   :label: inductionlessIcoMomentum
+$$ \rho \frac{\partial \vec{u}}{\partial t} + \rho \left( \vec{u} \cdot \nabla \right) \vec{u} -\rho \nu \nabla^{2} \vec{u} + \nabla p - \sigma \left(\vec{u} \times \vec{B_{0}} - \nabla \phi \right) \times \vec{B_{0}} = 0 $$
+
 
 .. math:: \nabla \cdot \vec{u} = 0
    :label: incompressibility
