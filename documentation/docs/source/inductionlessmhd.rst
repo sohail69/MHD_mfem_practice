@@ -110,10 +110,6 @@ equations needed to solve the discrete field equations.
    :label: conststiffness32
 
 
-.. math:: (K^{C}_{11})_{mn} = \int_{\Omega} \rho N_{im} N_{in} d\Omega
-   :label: conststiffness11
-
-
 
 .. autosummary::
    :toctree: generated
