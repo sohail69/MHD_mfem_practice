@@ -72,6 +72,7 @@ and, :math:`F_{i}` are the discrete field forcing terms.
 The matrix-vector structure can be further expanded into a block-matrix vector structure for each of the field variables
 as follows:
 
+
 .. math:: \begin{pmatrix} M_{11} & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} 
           \begin{pmatrix} \dot{\tilde{u}} \\ \dot{\tilde{p}} \\ \dot{\tilde{\phi}} \end{pmatrix}  +
           \left(
@@ -80,6 +81,7 @@ as follows:
           \right) +
           \begin{pmatrix} \tilde{u} \\ \tilde{p} \\ \tilde{\phi} \end{pmatrix}  =
           \begin{pmatrix} \tilde{f_{1}} \\ \tilde{f_{2}} \\ \tilde{f_{3}} \end{pmatrix}  
+   :label: blockmatrixvectorstructure
 
 
 Weak forms of the equation
