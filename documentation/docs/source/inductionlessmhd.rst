@@ -77,7 +77,7 @@ as follows:
           \begin{pmatrix} \dot{\tilde{u}} \\ \dot{\tilde{p}} \\ \dot{\tilde{\phi}} \end{pmatrix}  +
           \left[
           \begin{pmatrix} K^{C}_{11} & 0 & K^{C}_{13} \\ K^{C}_{21} & 0 & 0 \\ 0 & K^{C}_{32} & 0 \end{pmatrix} +
-          \begin{pmatrix} K^{V}_{11} & K^{C}_{12} & 0 \\ 0 & 0 & 0 \\ K^{C}_{31} & 0 & 0 \end{pmatrix}
+          \begin{pmatrix} K^{V}_{11} & K^{V}_{12} & 0 \\ 0 & 0 & 0 \\ K^{V}_{31} & 0 & 0 \end{pmatrix}
           \right]
           \begin{pmatrix} \tilde{u} \\ \tilde{p} \\ \tilde{\phi} \end{pmatrix}  =
           \begin{pmatrix} \tilde{f_{1}} \\ \tilde{f_{2}} \\ \tilde{f_{3}} \end{pmatrix}  
@@ -86,12 +86,12 @@ as follows:
 
 Weak forms of the equation
 ---------------------------
-The weak forms of the equation can be arrived at by multiplying the strong forms of the equations
-by test functions an integrating, often the test functions can be the interpolation functions. The 3-strong form
-equations have 3-corresponding weak form eqautions however the block matrix-structure means that the these can be
-further divided into linear and non-linear components.
+The matrix blocks can be interpreted as unique(ish) weak forms of the jacobian, and can be expanded out
+into integral equations. Integrating and assembling the matrix blocks gives the complete set of matrix 
+equations needed to solve the discrete field equations.
 
-
+.. math:: (M_{11})_{mn} = \int_{\Omega} \rho N_{im} N_{in} d\Omega
+   :label: massmatrix
 
 .. autosummary::
    :toctree: generated
