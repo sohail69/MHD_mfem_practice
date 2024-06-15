@@ -51,13 +51,14 @@ assumed to have a unique interpolation weight function.
 
 :math:`\phi = H_{q} \tilde{\phi}_{q}` (continuous approximation to discretised potential field)
 
-The discretised variables
+The discretised variables mean that the equations can be put into a block matrix structure 
 
 Weak forms of the equation
 ---------------------------
 The weak forms of the equation can be arrived at by multiplying the strong forms of the equations
 by test functions an integrating, often the test functions can be the interpolation functions. The 3-strong form
-equations have 3-corresponding weak form eqautions
+equations have 3-corresponding weak form eqautions however the block matrix-structure means that the these can be
+further divided into linear and non-linear components.
 
 .. autosummary::
    :toctree: generated
