@@ -17,14 +17,24 @@ The equations in the strong form can be given as a set of 3-differential equatio
    :label: incompressibility
 
 There variables can be broken up into a 3 categories: the first is field variables (to be solved for)
-, the second are field varying constants (material properties etc..) and the third categories are field/ time
-dependant source field variables.
+, the second are field varying constants (material properties etc..) and the third categoriy is applied source field variables.
 
+**Field Variables**:
+\vec{u} = the vector velocity field
+p = The scalar pressure field
+\phi = The scalar electric potential field
 
+**Field varying constants**:
+\rho = fluid density
+\nu = kinematic viscosity
+\sigma = conductivity
 
-Substitutions of variables
---------------------------
-The 
+**Applied source field variable**:
+\vec{B_{0}} = Applied vector B-field
+
+Discretisation of variables
+---------------------------
+
 
 .. autosummary::
    :toctree: generated
