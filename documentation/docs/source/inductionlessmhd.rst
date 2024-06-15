@@ -51,7 +51,11 @@ assumed to have a unique interpolation weight function.
 
 :math:`\phi = H_{q} \tilde{\phi}_{q}` (continuous approximation to discretised potential field)
 
-The discretised variables mean that the equations can be put into a block matrix structure 
+The discrete variables are denoted with a tilde over them, the equations can be put into a block matrix structure as
+follows:
+.. math:: M_{ij} \dot{Y}_{j} + \left( K^{C}_{ij} K^{V}_{ij} \right) Y_{j} = F_{i}
+   :label: blockMatrix
+
 
 Weak forms of the equation
 ---------------------------
