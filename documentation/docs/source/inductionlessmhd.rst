@@ -42,7 +42,7 @@ There variables can be broken up into a 3 categories: the first is field variabl
 Discretisation of variables and block Matrix-structure
 ------------------------------------------------------
 The field variables can be discretised in terms of an interpolation function weights
-(shape-function) and discrete a set of discrete field variables. Each field variable is
+(shape-function) and a set of discrete field variables. Each field variable is
 assumed to have a unique interpolation weight function.
 
 :math:`u_{i} = N_{im} \tilde{u}_{m}` (continuous approximation to discretised velocity field)
