@@ -52,12 +52,12 @@ assumed to have a unique interpolation weight function.
 :math:`\phi = H_{q} \tilde{\phi}_{q}` (continuous approximation to discretised potential field)
 
 The discrete variables are denoted with a tilde over them, from inspection of the govering equations
-it can be seen that the  discretized equations have a block matrix structure as
+it can be seen that the  discretized equations have a matrix-vector structure as
 follows:
 
 
 .. math:: M_{ij} \dot{\tilde{Y}}_{j} + \left( K^{C}_{ij} + K^{V}_{ij} \right) \tilde{Y}_{j} = F_{i}
-   :label: blockmatrixstructure
+   :label: matrixvectorstructure
 
 
 In the matrix vector equation above :math:`M_{ij}` is the mass matrix, :math:`K^{C}_{ij}` is the constant/linear 
@@ -65,9 +65,17 @@ component of the stiffness matrix, :math:`K^{V}_{ij}` is the variable/non-linear
 :math:`\dot{\tilde{Y}}_{j}` are the discrete field rates, :math:`\tilde{Y}_{j}` are the discrete field variables 
 and, :math:`F_{i}` are the discrete field forcing terms.
 
-* :math:`\dot{\tilde{Y}} = \left(\dot{\tilde{\vec{u}}} , \dot{\tilde{p}}, \dot{\tilde{\phi}}  \right)`
+* :math:`\dot{\tilde{Y}} = \left(\dot{\tilde{u}} , \dot{\tilde{p}}, \dot{\tilde{\phi}}  \right)` discrete field rates
 
-* :math:`\tilde{Y} = \left(\tilde{u} , \tilde{p}, \tilde{\phi}  \right)``
+* :math:`\tilde{Y} = \left(\tilde{u} , \tilde{p}, \tilde{\phi}  \right)` discrete field variables
+
+The matrix-vector structure can be further expanded into a block-matrix vector structure for each of the field variables
+as follows:
+
+.. math::   \begin{matrix}\begin{pmatrix}x & y\end{pmatrix}\\\mbox{}\end{matrix}
+  \begin{pmatrix} a & b \\ c & d \end{pmatrix} 
+  \begin{pmatrix} x \\ y \end{pmatrix}
+   :label: blockmatrixvectorstructure
 
 Weak forms of the equation
 ---------------------------
@@ -75,6 +83,8 @@ The weak forms of the equation can be arrived at by multiplying the strong forms
 by test functions an integrating, often the test functions can be the interpolation functions. The 3-strong form
 equations have 3-corresponding weak form eqautions however the block matrix-structure means that the these can be
 further divided into linear and non-linear components.
+
+
 
 .. autosummary::
    :toctree: generated
