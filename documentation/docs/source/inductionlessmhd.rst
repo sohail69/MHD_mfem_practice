@@ -118,15 +118,15 @@ equations needed to solve the discrete field equations.
 **Variable/non-linear-stiffness matrix components**
 
 
-.. math:: (K^{V}_{11})_{mn} = \int_{\Omega} \nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+.. math:: (K^{V}_{11})_{mn} = \int_{\Omega} \left( N_{im} \times \vec{B}_{0}  \right) \times \vec{B}_{0} \cdot N_{im} d\Omega
    :label: varstiffness11
 
 
-.. math:: (K^{V}_{13})_{mn} = \int_{\Omega} -\nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+.. math:: (K^{V}_{13})_{mn} = \int_{\Omega} - \left( \nabla L_{n} \times \vec{B}_{0} \right) \cdot N_{im} d\Omega
    :label: varstiffness13
 
 
-.. math:: (K^{V}_{31})_{mn} = \int_{\Omega} \nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+.. math:: (K^{V}_{31})_{mn} = \int_{\Omega} \nabla \cdot \left(N_{im} \times \vec{B}_{0} \right) \cdot L_{m} d\Omega
    :label: varstiffness31
 
 
