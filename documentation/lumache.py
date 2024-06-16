@@ -1,5 +1,5 @@
 """
-Lumache - Python library for cooks and food lovers.
+MMP- A MHD application implemented to practice using the MFEM library.
 """
 
 __version__ = "0.1.0"
