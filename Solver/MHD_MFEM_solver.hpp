@@ -15,6 +15,11 @@ class MHD_solver : public TimeDependentOperator
 
   private:
 
+    ParGridFunction * u_;   //velocity field
+    ParGridFunction * p_;   //pressure field
+    ParGridFunction * phi_; //velocity field
+
+    HypreParMatrix M11;     //Velocity Mass matrix
     
 
 
