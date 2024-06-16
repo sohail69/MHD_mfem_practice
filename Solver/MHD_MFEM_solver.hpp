@@ -13,4 +13,9 @@ class MHD_solver : public TimeDependentOperator
     int GetLogging() const {return logging_;};
     void SetLogging(int logging){logging_ = logging; };
 
+  private:
+
+    
+
+
 }
