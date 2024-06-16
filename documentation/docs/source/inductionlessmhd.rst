@@ -90,11 +90,16 @@ The matrix blocks can be interpreted as unique(ish) weak forms of the jacobian, 
 into integral equations. Integrating and assembling the matrix blocks gives the complete set of matrix 
 equations needed to solve the discrete field equations.
 
+**Mass matrix components**
+
+
 .. math:: (M_{11})_{mn} = \int_{\Omega} \rho N_{im} N_{in} d\Omega
    :label: massmatrix
 
+**Constant/linear-stiffness matrix components**
 
-.. math:: (K^{C}_{11})_{mn} = \int_{\Omega} \rho \nu \nabla N_{im} \nabla N_{in} d\Omega \int_{\partial \Omega} \rho \nu \nabla N_{im} N_{in} \cdot \vec{n} dS
+
+.. math:: (K^{C}_{11})_{mn} = \int_{\Omega} \rho \nu \nabla N_{im} \nabla N_{in} d\Omega - \int_{\partial \Omega} \rho \nu \nabla N_{im} N_{in} \cdot \vec{n} dS
    :label: conststiffness11
 
 
@@ -109,6 +114,20 @@ equations needed to solve the discrete field equations.
 .. math:: (K^{C}_{32})_{mn} = \int_{\Omega} \nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
    :label: conststiffness32
 
+
+**Variable/non-linear-stiffness matrix components**
+
+
+.. math:: (K^{V}_{11})_{mn} = \int_{\Omega} \nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+   :label: varstiffness11
+
+
+.. math:: (K^{V}_{13})_{mn} = \int_{\Omega} -\nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+   :label: varstiffness13
+
+
+.. math:: (K^{V}_{31})_{mn} = \int_{\Omega} \nabla H_{m} \nabla H_{n} d\Omega -  \int_{\partial \Omega} \nabla H_{m} H_{n} \cdot \vec{n} dS
+   :label: varstiffness31
 
 
 .. autosummary::
